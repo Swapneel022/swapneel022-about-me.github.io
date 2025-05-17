@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="Swapnil_formstyles.css">
+    <!-- Last Updated: 04-26-2025 04:30 PM -->
+</head>
+<body>
+    <!-- ECU Logo -->
+    <header>
+        <img src="https://s3-us-west-2.amazonaws.com/givecampus/uploads/school/EastCentralUniversity/ECU-Logo.gif" alt="ECU Logo" class="logo">
+    </header>
+
+    <!-- Page Navigation -->
+    <nav>
+        <h1>Page Navigation</h1>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#hobbies-likes">Hobbies/Likes</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h1>About Me</h1>
+        <p class="bold">My name is Swapnil Raj Pandey.</p>
+        <p class="italic">My major is Computer Science.</p>
+        <p class="underline">I am a Junior.</p>
+        <img src="C:\Users\pande\Downloads\1000004765.jpg" alt="ECU ID Photo" style="width: 150px; height: auto;">
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes">
+        <h1>Classes</h1>
+        <div class="container">
+            <div class="grid-1">
+                <h2>CMPSC 3323 - Internet Programming</h2>
+                <p>This course covers the history of the internet, HTML, JavaScript, CSS, and web publishing.</p>
+            </div>
+            <div class="grid-2">
+                <h2>CMPSC 4983 - SEM-Cloud Fundamentals</h2>
+                <p>This course teaches cloud computing concepts and tools.</p>
+            </div>
+            <div class="grid-3">
+                <h2>CPSMA 3103 - Algorithm Analysis</h2>
+                <p>Focuses on analyzing algorithms for efficient problem-solving.</p>
+            </div>
+            <div class="grid-4">
+                <h2>CMPSC 4213 - Data Base Design</h2>
+                <p>This course covers database management systems and their design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Grid Section Below Classes Section -->
+    <section id="new-section">
+        <h1>Interactive Forms</h1>
+        <div class="container">
+            <!-- Quadrant 1: Arithmetic Calculator -->
+            <div class="grid-1">
+                <h2>Arithmetic Calculator</h2>
+                <form id="arithmetic-form">
+                    <input type="number" id="num1" placeholder="Enter number 1">
+                    <input type="number" id="num2" placeholder="Enter number 2">
+                    <br>
+                    <label>
+                        <input type="radio" name="operation" value="add"> Add
+                    </label>
+                    <label>
+                        <input type="radio" name="operation" value="subtract"> Subtract
+                    </label>
+                    <label>
+                        <input type="radio" name="operation" value="multiply"> Multiply
+                    </label>
+                    <label>
+                        <input type="radio" name="operation" value="divide"> Divide
+                    </label>
+                    <br>
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="result1"></div>
+            </div>
+
+            <!-- Quadrant 2: Factorial -->
+            <div class="grid-2">
+                <h2>Factorial</h2>
+                <form id="factorial-form">
+                    <input type="number" id="factorial-num" placeholder="Enter an integer" required>
+                    <br>
+                    <button type="submit">Calculate Factorial</button>
+                </form>
+                <div id="result2"></div>
+            </div>
+
+            <!-- Quadrant 3: Fibonacci -->
+            <div class="grid-3">
+                <h2>Fibonacci Sequence</h2>
+                <form id="fibonacci-form">
+                    <input type="number" id="fib-num" placeholder="Enter Nth Fibonacci number" required>
+                    <br>
+                    <button type="submit">Generate Fibonacci</button>
+                </form>
+                <div id="result3"></div>
+            </div>
+
+            <!-- Quadrant 4: Max, Min, and Range -->
+            <div class="grid-4">
+                <h2>Max, Min, and Range</h2>
+                <form id="max-min-range-form">
+                    <input type="number" id="num1-range" placeholder="Enter number 1" required>
+                    <input type="number" id="num2-range" placeholder="Enter number 2" required>
+                    <input type="number" id="num3-range" placeholder="Enter number 3" required>
+                    <br>
+                    <button type="submit">Calculate</button>
+                </form>
+                <div id="result4"></div>
+            </div>
+
+            <!-- Fifth Quadrant: Mailing List Sign-Up -->
+            <div class="grid-5">
+                <h2>Mailing List Sign-Up</h2>
+                <form id="mailing-list-form">
+                    <input type="text" id="first-name" placeholder="First Name" value="John" required>
+                    <input type="text" id="last-name" placeholder="Last Name" value="Doe" required>
+                    <input type="email" id="email" placeholder="Email" value="John@AOL.com" required>
+                    <input type="text" id="zip-code" placeholder="ZIP Code" value="12345" required>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+                <div id="sign-up-output"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hyperlink to ECU homepage -->
+    <p><a href="https://www.ecok.edu/" target="_blank">ECU Homepage</a></p>
+
+    <script src="Swapnil_forms.js"></script>
+</body>
+</html>
