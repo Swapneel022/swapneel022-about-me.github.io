@@ -1,0 +1,84 @@
+/* === Page Basics === */
+
+/* Light-gray background so everything isn’t blinding white  */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;   /* classic + safe web font */
+}
+
+/* Keep all main headings a charcoal gray for good contrast */
+h1, h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif; /* same family as body for consistency */
+}
+
+/* === Simple utility classes for text styling === */
+.bold { font-weight: bold; }          /* slap this on anything that needs emphasis */
+.italic { font-style: italic; }       /* italics on demand */
+.underline { text-decoration: underline; } /* underlines without fuss */
+
+/* === Top Navigation === */
+nav ul {
+    list-style-type: none;            /* kill the default bullets */
+}
+nav ul li {
+    display: inline;                  /* sit menu items side-by-side */
+    margin-right: 10px;               /* little breathing room */
+}
+nav ul li a {
+    text-decoration: none;            /* ditch the underline */
+    color: #0077cc;                   /* nice ECU-ish blue */
+}
+nav ul li a:hover {
+    color: #005fa3;                   /* darker on hover for feedback */
+}
+
+/* === Grid of “Classes” cards === */
+.container {
+    display: grid;                    /* CSS Grid FTW */
+    grid-template-columns: repeat(2, 1fr); /* two equal columns */
+    gap: 20px;                        /* spacing between cards */
+    margin-top: 20px;
+}
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5 {
+    border: 2px solid #ccc;           /* light border */
+    padding: 20px;                    /* interior padding */
+    background-color: rgba(0, 255, 0, 0.1); /* faint green tint */
+    transition: background-color 0.3s ease; /* smooth hover effect */
+}
+/* brighten the green when someone hovers */
+.grid-1:hover, .grid-2:hover, .grid-3:hover, .grid-4:hover, .grid-5:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+/* make the last card span across both columns, kinda like a footer block */
+.grid-5 {
+    grid-column: span 2;
+}
+
+/* === ECU Logo === */
+/* fixed width so it’s not massive, auto height to keep ratio */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Wrapper that actually centers the logo on the page */
+.logo-wrapper {
+    display: flex;                    /* flexbox makes centering easy */
+    justify-content: center;          /* center left↔right */
+    /* If you ALSO want it dead-center top↔bottom, uncomment: */
+    /* align-items: center;
+       min-height: 100vh; */
+    margin: 20px 0;                   /* little space above and below */
+}
+
+/* === Generic links (outside nav) === */
+a {
+    color: #0077cc;
+}
+a:hover {
+    color: #005fa3;
+}
+a:active {
+    color: #003d66;                   /* clicked link gets even darker */
+}
